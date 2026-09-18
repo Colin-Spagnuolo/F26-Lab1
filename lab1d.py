@@ -2,8 +2,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Colin Spagnuolo
+# Date: September 18th, 2026
 # Purpose: Use string methods and f-string formating.
 # Usage: python3 lab1d.py
 
@@ -12,15 +12,31 @@
 # Use the string method .upper() to convert the name to upper case.
 # Create another variable called “age”, the value of “age” should be your age
 # The script, when executed, should print out "How are you yourname? Happy xxth birthday!" To print this output use .format() method. 
-
+name = "colin spagnuolo"
+name = name.upper()
+age = 23
+Birthday_message = "How are you {name}? Happy {age}rd birthday!".format(name, age)
+print(Birthday_message)
 #TO-DO 2:
 # Create a variable called "words".
 # The value of words should be "The quick brown fox jumps over the lazy dog".
 # Use indexing to return the first and 17th charecters of "words" to the user.
+words = "The quick brown fox jumps over the lazy dog"
+first_c = words[0]
+seventeenth_c = words[16]
+print("The first character is: ", first_c)
+print("The seventeenth character is: ", seventeenth_c)
 
 #TO-DO 3:
 # Use negative indexing to return the words "jumps" and "quick" from "words" to the user.
-
+jumps = words[-20:-15]
+quick = words[-43:-38]
+print(jumps)
+print(quick)
 #TO-DO 4:
 # Use slicing to retun everything between index 2-15 to the user.
 # Print "uick brown foxs ju" from "words".
+words_slice = words[2:15]
+print(words_slice)
+words_slice2 = words[1:15]
+print(words_slice2)
